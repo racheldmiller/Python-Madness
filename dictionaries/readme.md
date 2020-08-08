@@ -56,7 +56,7 @@ for k, v in student.items():
 ```
 
 returns things like `key is name and value is Rachel`.
-  
+
 There are some other methods that make things even simpler!
 
 ## Clear
@@ -122,4 +122,49 @@ d= dict (a=1, b=2, c=3)
 d['a'] #1
 d.get('a') #1 d['b] #2
 d.get('b') #2
+```
+
+# Dictionary Methods: Pop, Popitems, and Update
+
+### pop
+
+Takes a single argument corresponding to a key and removes that key-value pair from the dictionary. Returns the value corresponding to the key that was removed.
+
+```
+d = dict(a=1, b=2, c=3)
+d.pop() # TypeError: pop expected at least 1 arguments, got 0
+d.pop('a') #1
+d # {'c': 3, 'b': 2}
+d.pop('e') # KeyError
+```
+
+### popitem
+
+Removes a random key in a dictionary:
+
+```
+d = dict(a=1, b=2, c=3, d=4, e=5)
+d.popitem() # ('d', 4)
+d.popitem('a') # TypeError: popitem() takes no arguments (1 given)
+```
+
+### update
+
+Update keys and values in a dictionary with another set of key value pairs.
+
+```
+first = dict(a=1, b=2, c=3, d=4, e=5)
+second = {}
+
+second.update(first)
+second # {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e':5}
+
+# let's overwrite an existing key
+second['a'] = "AMAZING"
+
+# if we update again
+second.update(first) # {'a':1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
+
+# the update overrides our values
+second # {'a':1, 'b': 2, 'c':3, 'd':4, 'e':5}
 ```
