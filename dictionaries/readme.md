@@ -113,9 +113,7 @@ will create a new dictionary, even if there's an existing one.
 
 ## Get
 
-Retries a key in an object and returns None instead of a KeyError if the key does not exist.
-
-Retrieves a key in an object and return None instead of a KeyError if the key does not exist:
+Retrieves a key in an object and returns None instead of a KeyError if the key does not exist.
 
 ```
 d= dict (a=1, b=2, c=3)
