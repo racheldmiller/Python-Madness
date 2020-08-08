@@ -166,3 +166,41 @@ second.update(first) # {'a':1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
 # the update overrides our values
 second # {'a':1, 'b': 2, 'c':3, 'd':4, 'e':5}
 ```
+
+# Dictionary Comprehension
+
+Instead of brackets, we use dictionary brackets.
+
+`{__:__ for __in__}`
+
+- iterates over keys by default
+- to iterate over keys and values using .items()
+
+```
+numbers = dict(first =1, second=2, third=3)
+squared_numbers = {key: value ** 2 for key,value in numbers.items()}
+print(squared_numbers) # {'first': 1, 'second': 4, 'third':9}
+```
+
+Making a dictionary, but starting with a list.
+
+```
+{num: num**2 for num in [1,2,3,4,5]}
+```
+
+This time we have two strings.
+
+```
+str1 = "ABC"
+str2 = "123"
+combo = {str1[i]: str2[i] for i in range(0,len(str1))}
+print(combo) # # {'A': '1', 'B': '2', 'C': '3'}
+```
+
+### conditional logic with dictionaries
+
+```
+num_list = [1,2,3,4]
+{ num:("even" if num % 2 == 0 else "odd") for num in num_list}
+# {1: 'odd', 2: 'even', 3: 'odd', 4: 'even'}
+```
