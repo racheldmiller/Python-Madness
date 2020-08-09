@@ -109,3 +109,23 @@ while num < 11:
 
 - with a while loop, you have to declare the variable first.
 - while loop example will be fine if you add `num += 1` on the next line after print.
+
+# Controlled Exit
+
+The keyword break gives us the ability to exit out of while loops whenver we want:
+
+```
+while True:
+    command = input("Type 'exit' to exit: ")
+        if (command == "exit"):
+            break
+```
+
+We can also use it to end for loops early:
+
+```
+for x in range(1,101):
+    print(x)
+    if x==3:
+        break
+```
