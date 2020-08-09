@@ -114,3 +114,16 @@ child = None
 
 - String literals in Python can be declared with either single or double quotes.
 - Doesn't matter, but needs to be consistent with the convention throughout the same file.
+- If you're using a quote inside of a quote, then you'll need to use both: `msg = "he said 'hello there!'"` (or vice-versa)
+
+# String Escape Characters (Escape Sequences)
+
+- In Python, there are also "escape characters", which are "metacharacters" - they get interpreted by Python to do something special: `\`
+  (Check Python documentation for a complete table of the different options.)
+
+```
+new_line = "hello \n world"
+print (new_line)
+# hello
+# world
+```
