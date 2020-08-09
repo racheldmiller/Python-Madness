@@ -78,3 +78,34 @@ print(num)
 while im_tired:
     # seek caffeine
 ```
+
+- While loops continue to execute while a certain condition is truthy, and will end when they become falsy.
+
+```
+user_response = None
+while user_response != "please":
+    user_response = input("Ah ah ah, you didn't say the magic word: ")
+```
+
+- while loops require more careful setup than for loops, since you have to specify the termination conditions manually.
+- Be careful! If the condition doesn't become false at some point, your loop will continue forever.
+
+```
+msg = input("what's the secret password?")
+while msg != "bananas":
+    print("WRONG!")
+    msg = input("what's the secret password?")
+print("CORRECT!")
+```
+
+```
+for num in range(1,11):
+    print(num)
+
+num = 1
+while num < 11:
+    print(num) <-- this will create an infinite loop because 1 is < 11.
+```
+
+- with a while loop, you have to declare the variable first.
+- while loop example will be fine if you add `num += 1` on the next line after print.
