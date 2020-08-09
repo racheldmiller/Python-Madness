@@ -127,3 +127,36 @@ print (new_line)
 # hello
 # world
 ```
+
+# String Concatenation
+
+- Concatenation is combining multiple strings together. In Python, you can simple do this with the "+" operator.
+- Only works with strings.
+
+```
+str_one = "your"
+str_two = "face"
+str_three = str_one + " " + str_two # your face
+```
+
+```
+username = "bluethecat"
+print("Hello there and welcome to the game, " + username)
+returns --> Hello there and welcome to the game, bluethecat
+```
+
+- You can also use the "+-" operator!
+- Can use this with integers.
+
+```
+str_one = "ice"
+str_one += " cream"
+str_one # ice cream
+```
+
+```
+people = 99
+people += 1
+people
+100
+```
