@@ -58,3 +58,25 @@ tasks = list(range(1,4))
 ```
 
 Another way if you need a list of numbers, so you're not just using a range to loop through things. You can convert the range into a list.
+
+## Accessing Values in a List
+
+```
+friends = ["Ashley", "Matt", "Michael"]
+
+print(friends[0]) # 'Ashley'
+print(friends[1]) # 'Michael'
+```
+
+Like ranges, lists ALWAYS start counting at zero. So the first element lives at index 0.
+
+```
+colors = ["purple", "teal", "orange"]
+colors[0]
+'purple'
+the_best = colors[0]
+the_best
+'purple'
+
+# Note that colors remains unchanged. All this does is retrieve the value.
+```
