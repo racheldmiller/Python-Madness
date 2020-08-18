@@ -187,3 +187,34 @@ first_list = [1,2,3,4]
 first_list.insert(2, "Hi!")
 print(first_list) # [1,2,"Hi!"]
 ```
+
+### Clear
+
+- Least commonly used.
+- Removes all items from the list. Doesn't matter what's in the list.
+
+### Pop
+
+- Remove the item at the given position in the list, and return it.
+- If no index specified, removes and returns last item in the list.
+- Doesn't completely remove it. Lets you capture value.
+
+```
+first_list = [1,2,3,4]
+first_list.pop() # 4
+first_list.pop(1) # 2
+
+"Please remove whatever's at the index[1]"
+```
+
+### Remove
+
+- Works a little differently than the others in that...
+  - Remove the first item from the list whose value is x.
+- Throws a ValueError if the item is not found.
+
+```
+first_list = [1,2,3,4,4,4]
+first_list.remove(2)
+print(first_list) # [1,3,4,4,4]
+```
