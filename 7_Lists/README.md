@@ -38,3 +38,23 @@ tasks = [first_task, second_task, third_task]
 ```
 
 We could use a variable that references a string and add it in.
+
+## How Many Elements Exist?
+
+`len` stands for "length"
+This is useful because let's say you needed to loop through a list. You'd need to know how many items are in the list first.
+
+```
+tasks = ["Install Python", "Learn Python", "Take a break"]
+len(tasks) #3
+```
+
+## Another Way to Make a List
+
+`list()`
+
+```
+tasks = list(range(1,4))
+```
+
+Another way if you need a list of numbers, so you're not just using a range to loop through things. You can convert the range into a list.
