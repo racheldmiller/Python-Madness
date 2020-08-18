@@ -80,3 +80,69 @@ the_best
 
 # Note that colors remains unchanged. All this does is retrieve the value.
 ```
+
+## Accessing Values from the End
+
+```
+friends = ["Ashley", "Matt", "Michael"]
+
+print(friends[-1]) # 'Michael'
+print(friends[-3]) # 'Ashley'
+```
+
+You can use a negative number to index backwards.
+
+## Check if a Value is in a List
+
+```
+friends = ["Ashley", "Matt", "Michael"]
+
+"Ashley" in friends # True
+"Colt" in friends # False
+```
+
+Capitalization matters.
+
+## Accessing All Values in a List
+
+```
+numbers = [1,2,3,4]
+
+print(numbers[0]) #1
+print(numbers[1]) #2
+print(numbers[2]) #3
+print(numbers[3]) #4
+```
+
+Could print out each value... OR use a loop
+
+FOR LOOP
+
+```
+numbers = [1,2,3,4]
+
+for number in numbers:
+    print(number)
+#1
+#2
+#3
+#4
+```
+
+WHILE LOOP
+
+```
+numbers = [1,2,3,4]
+i = 0
+
+for i < len(numbers):
+    print(numbers[i])
+    i += 1 # Otherwise, you'll get an infinite loop
+#1
+#2
+#3
+#4
+```
+
+If all you want to do is print out data or access data directly from inside the list, use a for loop because it's cleaner and shorter.
+Something more complicated would require having the index accessible, which isn't available in the for loop by default.
