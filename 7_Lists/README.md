@@ -146,3 +146,44 @@ for i < len(numbers):
 
 If all you want to do is print out data or access data directly from inside the list, use a for loop because it's cleaner and shorter.
 Something more complicated would require having the index accessible, which isn't available in the for loop by default.
+
+# List Methods
+
+A method is a type of function, but significant distinction. For the ones specific to lists, you append the `.(<METHOD NAME>)` to the list name.
+
+### Append
+
+Add an item to the end of the list.
+
+```
+first_list = [1,2,3,4]
+first_list.append(5)
+print(first_list) # [1,2,3,4,5]
+```
+
+### Extend
+
+Add to the end of a list all values passed to extend.
+
+```
+first_list = [1,2,3,4]
+first_list.append([5,6,7,8])
+print(first_list) # [1,2,3,4, [5,6,7,8]]
+correct_list = [1,2,3,4]
+correct_list.extend([5,6,7,8])
+print(correct_list) # [1,2,3,4,5,6,7,8]
+
+```
+
+Adding 1 item to the end of the list, use append. More than 1 at the end, use extend. Otherwise, use insert.
+
+### Insert
+
+Insert an item at a given position.
+First thing you provide is the index you want to add the new data to, followed by what you want to add.
+
+```
+first_list = [1,2,3,4]
+first_list.insert(2, "Hi!")
+print(first_list) # [1,2,"Hi!"]
+```
