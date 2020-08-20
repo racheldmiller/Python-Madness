@@ -274,6 +274,10 @@ print(another_list) # [1,2,4,5,6]
 
 - not a list method, it's a string method
 - commonly used to convert lists to strings
+- it takes an iterable argument
+- concatenates (combines) a copy of the base string between each item of the iterable
+- returns a new string
+- can be used to make sentences out of a list of words by joining on a space.
 
 ```
 words = ['Coding', 'Is', 'Fun!']
