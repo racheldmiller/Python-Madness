@@ -356,3 +356,28 @@ print(names) # ['Michelle', 'James']
 - when you're shuffling things
 - sorting a list in place
 - algorithms
+
+# Nested Lists
+
+- Lists inside of other lists. (or "multidimensional lists")
+- Can contain any kind of element, even other lists!
+
+#### Why?
+
+- complex data structures - matrices
+- game boards / mazes
+- rows and columns for visualizations, tabulation, and grouping data
+
+```
+nested_list = [[1,2,3], [4,5,6], [7,8,9]]
+```
+
+REALLY GOOD FOR TIC TAC TOE
+
+## Accessing Nested Lists
+
+```
+nested_list = [[1,2,3], [4,5,6], [7,8,9]]
+nested_list[0][1] # 2
+nested_list[1][-1]# 6
+```
