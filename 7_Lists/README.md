@@ -218,3 +218,22 @@ first_list = [1,2,3,4,4,4]
 first_list.remove(2)
 print(first_list) # [1,3,4,4,4]
 ```
+
+### index
+
+- returns the index of the specified item in the list
+- can specify start and end
+
+```
+numbers = [5,6,7,8,9,10]
+numbers.index(6) # 1
+numbers.index(9) # 4
+```
+
+```
+numbers = [5,5,6,7,5,8,8,9,10]
+numbers.index(5) # 0
+numbers.index(5,1) # 1 "Find the index of 5 after 1 (and it's inclusive)"
+numbers.index(5,2) # 4
+numbers.index(8,6,8) # 6 "Find 8 between the index of 6 and 8"
+```
