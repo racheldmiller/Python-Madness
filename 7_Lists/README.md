@@ -283,3 +283,62 @@ print(another_list) # [1,2,4,5,6]
 words = ['Coding', 'Is', 'Fun!']
 ' '.join(words) # 'Coding is Fun!'
 ```
+
+### Slicing
+
+- make new lists using slices of the old list!
+- where should we start making cuts, and stop. Are we including every index, or skipping every other one?
+  `some_list[start:end:step]`
+- similar to `range(start,stop,step)` except you're using colons and square brackets.
+
+#### First Parameter for Slice: start
+
+- what index to start slicing from
+- If you enter a negative number, it will start the slice that many back from the end.
+
+```
+first_list = [1,2,3,4]
+first_list.[1:] # [2,3,4] slice from index(1) to the end.
+first_list.[3:] # [4]
+```
+
+```
+first_list = [-1:] # [4]
+first_list.[-3:] # [2,3,4]
+```
+
+#### Second Parameter for Slice: end
+
+- The index to copy up to (exclusive counting)
+- With negative numbers, how many items to exclude from the end (i.e. indexing by counting backwards)
+
+```
+first_list = [1,2,3,4]
+first_list.[:2] # [1,2] Assumes to start at 0 index. Doesn't include index(2)
+first_list.[:4] # [1,2,3,4]
+first_list.[1:3] # [2,3] Index(1) = 2 (inclusive), index(3) = 4 (exclusive)
+```
+
+```
+first_list = [:-1] # [1,2,3]
+first_list = [1:-1] # [2,3]
+```
+
+#### Third Parameter for Slice: step
+
+- "step" in Python is basically the number to count at a time
+- works the same way as how ranges do
+- for example, a step of 2 counts every other number (1,3,5)
+- with negative numbers, reverse the order
+
+```
+first_list = [1,2,3,4,5,6]
+first_list.[1::2] # [2,4,6]
+first_list[::2] # [1,3,5]
+```
+
+```
+first_list[1::-1]= [2,1]
+first_list.[:1:-1] # [6,5,4,3] passing in the end point, exclusive.
+first_list[2::-1] # [3,2,1]
+```
