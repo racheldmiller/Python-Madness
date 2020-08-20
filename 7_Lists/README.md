@@ -342,3 +342,17 @@ first_list[1::-1]= [2,1]
 first_list.[:1:-1] # [6,5,4,3] passing in the end point, exclusive.
 first_list[2::-1] # [3,2,1]
 ```
+
+# Swapping Values
+
+```
+names = ["James", "Michelle"]
+names[0], names[1] = names[1], names[0]
+print(names) # ['Michelle', 'James']
+```
+
+### When do you need to swap?
+
+- when you're shuffling things
+- sorting a list in place
+- algorithms
