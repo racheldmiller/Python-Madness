@@ -237,3 +237,45 @@ numbers.index(5,1) # 1 "Find the index of 5 after 1 (and it's inclusive)"
 numbers.index(5,2) # 4
 numbers.index(8,6,8) # 6 "Find 8 between the index of 6 and 8"
 ```
+
+### count
+
+- return the number of times x appears in the list
+
+```
+numbers = [1,2,3,4,3,2,1,4,10,2]
+numbers.count(2) # 3 How many times does 2 occur? Return the frequency.
+numbers.count(21) # 0 (because it doesn't exist)
+numbers.count(3) # 2
+```
+
+### reverse
+
+- reverse the elements of the list (in-place)
+
+```
+first_list = [1,2,3,4]
+first_list.reverse()
+print(first_list) # [4,3,2,1]
+```
+
+### sort
+
+- sort the items of the list (in-place)
+- in ascending order (like alphabetically)
+
+```
+another_list = [6,4,1,2,5]
+another_list.sort()
+print(another_list) # [1,2,4,5,6]
+```
+
+### join
+
+- not a list method, it's a string method
+- commonly used to convert lists to strings
+
+```
+words = ['Coding', 'Is', 'Fun!']
+' '.join(words) # 'Coding is Fun!'
+```
