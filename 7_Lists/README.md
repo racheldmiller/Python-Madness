@@ -379,5 +379,40 @@ REALLY GOOD FOR TIC TAC TOE
 ```
 nested_list = [[1,2,3], [4,5,6], [7,8,9]]
 nested_list[0][1] # 2
-nested_list[1][-1]# 6
+nested_list[1][-1] # 6
+```
+
+## Printing Values or Iterating Through Nested Lists
+
+```
+nested_list = [[1,2,3], [4,5,6], [7,8,9]]
+
+for 1 in nested_list:
+    for val in 1:
+        print(val)
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+```
+
+## Nested List Comprehension
+
+```
+nested_list = [[1,2,3], [4,5,6], [7,8,9]]
+[[print(val) for val in 1] for 1 in nested_list]
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
 ```
