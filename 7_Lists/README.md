@@ -416,3 +416,10 @@ nested_list = [[1,2,3], [4,5,6], [7,8,9]]
 # 8
 # 9
 ```
+
+```
+board = [[num for num in range(1,4) for val in range(1,4)]]
+print(board) # [[1,2,3], [1,2,3], [1,2,3]]
+[["X" if num % 2 != 0 else "O" for num in range(1,4)] for val in range(1,4)]
+# [['X', 'O', 'X'], ['X', 'O', 'X'], ['X', 'O', 'X']]
+```
